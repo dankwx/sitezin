@@ -4,6 +4,8 @@ import "./index.css";
 import Home from "./pages/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Canto from "./pages/Canto";
+import Post1 from "./pages/Canto/Post1";
+import Post2 from "./pages/Canto/Post2";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -14,6 +16,8 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/canto" element={<Canto />} />
+        <Route path="/canto/post/1" element={<Post1 />} />
+        <Route path="/canto/post/2" element={<Post2 />} />
         <Route
           path="*"
           element={

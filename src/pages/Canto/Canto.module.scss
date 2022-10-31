@@ -1,0 +1,72 @@
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+  background-color: black;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAAAXNSR0IArs4c6QAAAXdJREFUeF7t20tOw0AURNFkq7AMxiwDtgpzkOg8+Vox9sm0nyv26ZKV7/3mkQrc0zRhN6BxCYACjQXiOA0FGgvEcRoKNBaI4zQUaCwQx2ko0FggjtNQoLFAHKehQGOBOE5DgcYCcZyGng30/eXja3JNb5+vhy7B008O6KROD8wCfQBpMgJ0onXB2affQ89mDjTeUaBAY4E4TkOBxgJxnIYC3Sbw841E/dnA5RoKdFshfx0NFGgsEMdpKNBYII7T0KuD7t2Arb57n1/+OnTvEwZ6sG8p995wDY03/HKgW28Zq+OBroSG60CHYKtxoCuh4TrQIdhqHOhKaLgOdAi2Gge6Ehqu56DD5z/dONB4S4ECjQXiOA0FGgvEcRoKNBaI4w7f0P/2pwagGvq3QP1ruqm3hk7FFvOHB42vd/c4oDExUKCxQBynoUBjgThOQ4HGAnGchgKNBeI4DQUaC8RxGgo0FojjNBRoLBDHaSjQWCCO01CgsUAc9w3y/YBVcbHDwwAAAABJRU5ErkJggg==")
+    28 / 28px / 0 round;
+  border-width: 28px;
+  border-style: solid;
+  .links {
+    width: 100%;
+    height: 75vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+  }
+  .paginationSection {
+    width: 100%;
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // now stlye for each number text
+    .paginationNumber {
+      color: rgb(148, 142, 241);
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0 10px;
+      // put a line below it to indicate that is a link, the line is white
+      border-bottom: 2px solid rgb(186, 89, 224);
+      // when hover, the line is purple
+      &:hover {
+        border-bottom: 2px solid rgb(148, 142, 241);
+      }
+    }
+  }
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+h1 {
+  color: rgb(148, 142, 241);
+  margin: 2vh;
+  font-size: 1.4rem;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 1rem;
+
+  // if visited, change color to white
+  &:visited {
+    color: rgb(148, 142, 241);
+  }
+}
