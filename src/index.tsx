@@ -16,7 +16,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/canto" element={<Canto />} />
-        <Route path="/canto/post/1" element={<Post1 />} />
+        <Route path="/canto/post1" element={<Post1 />} />
         <Route path="/canto/post/2" element={<Post2 />} />
         <Route
           path="*"
