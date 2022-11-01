@@ -5,7 +5,7 @@ import dreamGif from "../../../assets/images/dream.gif";
 export default function Post2() {
   return (
     <div className={styles.post1}>
-      <Header title="" goBack />
+      <Header title="" goBack path="/canto" />
       <div className={styles.contentContainer}>
         <div className={styles.titleSection}>
           <h1>god's face</h1>

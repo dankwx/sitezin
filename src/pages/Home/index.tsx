@@ -8,7 +8,7 @@ import Canto from "../Canto";
 export default function Home() {
   return (
     <div className={styles.home}>
-      <Header {...{ title: "dankwx" }} />
+      <Header {...{ title: "dankwx", path: "/" }} />
       <div className={styles.contentContainer}>
         <div className={styles.profile}>
           <img src={profile} alt="profile" />

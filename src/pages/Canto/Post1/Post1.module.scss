@@ -49,6 +49,9 @@
       // make a good to see easy to read line and font
       line-height: 1.5;
       font-family: "Noto Sans KR", sans-serif;
+      strong {
+        color: rgb(170, 128, 189);
+      }
     }
   }
   img {

@@ -4,7 +4,7 @@ import styles from "./Post1.module.scss";
 export default function Post1() {
   return (
     <div className={styles.post1}>
-      <Header title="" goBack />
+      <Header title="" goBack path="/canto" />
       <div className={styles.contentContainer}>
         <div className={styles.titleSection}>
           <h1>o contador</h1>
@@ -14,7 +14,7 @@ export default function Post1() {
         </div>
         <div className={styles.contentSection}>
           <p>
-            assisti o contador hj, curti...
+            assisti <strong>o contador</strong> hj, curti...
             <br />
           </p>
           <img src="https://i.imgur.com/H7A6mVD.png" alt="" />

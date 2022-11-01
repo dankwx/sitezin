@@ -1,6 +1,6 @@
 import styles from "./Header.module.scss";
 
-export default function Header(props: { title: string; goBack?: boolean }) {
+export default function Header(props: { title: string; goBack?: boolean; path: string }) {
   return (
     <header className={styles.header}>
       <div className={styles.title}>
@@ -10,7 +10,7 @@ export default function Header(props: { title: string; goBack?: boolean }) {
             <p
               className={styles.goBack}
               onClick={() => {
-                window.location.href = "/canto";
+                window.location.href = props.path;
               }}
             >
               voltar
