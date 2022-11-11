@@ -1,0 +1,156 @@
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
+  .titleSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: rgb(170, 128, 189);
+    }
+  }
+  .dateSection {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    // start from left
+    justify-content: flex-start;
+
+    h1 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: rgb(123, 47, 148);
+    }
+  }
+  .contentSection {
+    width: 90vw;
+    .loveText {
+      font-size: 1.5rem;
+      font-weight: 600;
+      // make it little pink love
+      color: rgb(238, 113, 132);
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 600;
+      color: white;
+      // make a good to see easy to read line and font
+      line-height: 1.5;
+      font-family: "Noto Sans KR", sans-serif;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none; /* Standard syntax */
+      span {
+        // make aniimation the text change color slowly in mobile, like glowing in different colors
+        animation: glowing 1500ms infinite;
+        -webkit-animation: glowing 1500ms infinite;
+        -moz-animation: glowing 1500ms infinite;
+        -o-animation: glowing 1500ms infinite;
+        -ms-animation: glowing 1500ms infinite;
+
+        @keyframes glowing {
+          0% {
+            color: rgb(170, 128, 189);
+          }
+          50% {
+            color: rgb(123, 47, 148);
+          }
+          100% {
+            color: rgb(170, 128, 189);
+          }
+        }
+        @-webkit-keyframes glowing {
+          0% {
+            color: rgb(170, 128, 189);
+          }
+          50% {
+            color: rgb(123, 47, 148);
+          }
+          100% {
+            color: rgb(170, 128, 189);
+          }
+        }
+      }
+    }
+    img {
+      // make image fit to the screen
+      width: 30%;
+      height: auto;
+      margin-bottom: 2.5vh;
+      margin-top: 2.5vh;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .shakingText {
+      animation: shake 10.5s;
+      animation-iteration-count: infinite;
+      @keyframes shake {
+        0% {
+          transform: translate(1px, 1px) rotate(0deg);
+        }
+        10% {
+          transform: translate(-1px, -2px) rotate(-1deg);
+        }
+        20% {
+          transform: translate(-3px, 0px) rotate(1deg);
+        }
+        30% {
+          transform: translate(3px, 2px) rotate(0deg);
+        }
+        40% {
+          transform: translate(1px, -1px) rotate(1deg);
+        }
+        50% {
+          transform: translate(-1px, 2px) rotate(-1deg);
+        }
+        60% {
+          transform: translate(-3px, 1px) rotate(0deg);
+        }
+        70% {
+          transform: translate(3px, 1px) rotate(-1deg);
+        }
+        80% {
+          transform: translate(-1px, -1px) rotate(1deg);
+        }
+        90% {
+          transform: translate(1px, 2px) rotate(0deg);
+        }
+        100% {
+          transform: translate(1px, -2px) rotate(-1deg);
+        }
+      }
+      color: rgb(255, 0, 0);
+    }
+  }
+}
+
+.goBack {
+  color: aliceblue;
+}

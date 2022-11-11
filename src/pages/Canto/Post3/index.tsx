@@ -2,7 +2,7 @@ import Header from "../../../components/Header";
 import styles from "./Post3.module.scss";
 import dreamGif from "../../../assets/images/dream.gif";
 
-export default function Post2() {
+export default function Post3() {
   return (
     <div className={styles.post1}>
       <Header title="" goBack path="/canto" />

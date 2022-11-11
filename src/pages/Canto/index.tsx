@@ -4,7 +4,6 @@ import Header from "../../components/Header";
 import { useState } from "react";
 
 export default function Canto() {
-  // modal shows only once, use local storage
   const [showModal, setShowModal] = useState(
     localStorage.getItem("showModal") === "true" ? false : true
   );
@@ -33,20 +32,24 @@ export default function Canto() {
       <Header title="Meu canto" path="/" />
       <div className={styles.contentContainer}>
         <div className={styles.links}>
+          <a href="/canto/post/4">7. marci</a>
+          <a href="/canto/post/5">6. c</a>
+          <a href="/canto/post/7">5. site</a>
+          <a href="/canto/post/6">4. gostar de alguem</a>
           <a href="/canto/post/1">3. o contador</a>
           <a href="/canto/post/2">2. god's face</a>
           <a href="/canto/post/3">1. sett</a>
         </div>
         <div className={styles.paginationSection}>
-          <Link className={styles.paginationNumber} to="/canto/2">
+          <Link className={styles.paginationNumber} to="/canto/">
             1
           </Link>
-          <Link className={styles.paginationNumber} to="/canto/3">
+          {/* <Link className={styles.paginationNumber} to="/canto/3">
             2
           </Link>
           <Link className={styles.paginationNumber} to="/canto/4">
             3
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

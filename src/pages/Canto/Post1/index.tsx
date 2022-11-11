@@ -10,7 +10,7 @@ export default function Post1() {
           <h1>o contador</h1>
         </div>
         <div className={styles.dateSection}>
-          <h1>30/10/2022</h1>
+          <h1>31/10/2022</h1>
         </div>
         <div className={styles.contentSection}>
           <p>
